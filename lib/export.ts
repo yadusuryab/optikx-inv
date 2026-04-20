@@ -24,8 +24,8 @@ function downloadCsv(filename: string, rows: string[][]): void {
 }
 
 export function exportOrdersCsv(orders: Order[]): void {
-  const headers = ['Date', 'Product', 'SKU', 'Qty', 'Selling Price', 'Cost Price', 'Revenue', 'Profit'];
-  const rows = orders.map((o) => [
+  const headers :any= ['Date', 'Product', 'SKU', 'Qty', 'Selling Price', 'Cost Price', 'Revenue', 'Profit'];
+  const rows:any = orders.map((o) => [
     o.date,
     o.products?.name ?? o.product_id,
     o.products?.sku ?? '',
@@ -40,7 +40,7 @@ export function exportOrdersCsv(orders: Order[]): void {
 
 export function exportExpensesCsv(expenses: Expense[]): void {
   const headers = ['Date', 'Title', 'Category', 'Amount'];
-  const rows = expenses.map((e) => [e.date, e.title, e.category, e.amount]);
+  const rows :any= expenses.map((e) => [e.date, e.title, e.category, e.amount]);
   downloadCsv('expenses.csv', [headers, ...rows]);
 }
 
@@ -49,7 +49,7 @@ export function exportAnalyticsCsv(analytics: ProductAnalytics[]): void {
     'Product', 'SKU', 'Qty Sold', 'Revenue', 'Cost',
     'Gross Profit', 'Marketing Allocated', 'Net Profit',
   ];
-  const rows = analytics.map((p) => [
+  const rows:any = analytics.map((p) => [
     p.name,
     p.sku ?? '',
     p.totalQuantitySold,
