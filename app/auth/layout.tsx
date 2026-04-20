@@ -14,9 +14,8 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
                 <rect x="10" y="10" width="6" height="6" rx="1" fill="white" opacity="0.9"/>
               </svg>
             </div>
-            <span className="text-xl font-semibold text-slate-900">LedgerFlow</span>
+            <span className="text-xl font-semibold text-slate-900">Optikx</span>
           </div>
-          <p className="text-sm text-slate-500">Accounting & Inventory Management</p>
         </div>
         {children}
       </div>
