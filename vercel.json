@@ -5,7 +5,7 @@
   "installCommand": "npm install",
   "regions": ["iad1"],
   "env": {
-    "NEXT_PUBLIC_SUPABASE_URL": "@supabase_url",
-    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@supabase_anon_key"
+    "NEXT_PUBLIC_SUPABASE_URL": "https://heorfacneibblffdjvyc.supabase.co",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhlb3JmYWNuZWliYmxmZmRqdnljIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU4Njg4MTksImV4cCI6MjA5MTQ0NDgxOX0.y-YSd_hr-hJJzmzZifhSBsW0i5Ji1DHcw2SSzXXF6Ck"
   }
 }
