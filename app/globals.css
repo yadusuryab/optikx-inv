@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'DM Mono', monospace;
+
+  /* Brand colors */
+  --color-brand: #2563eb;
+  --color-brand-dark: #1d4ed8;
+  --color-brand-light: #eff6ff;
+
+  /* Surface */
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+  --color-border-strong: #cbd5e1;
+
+  /* Text */
+  --color-text: #0f172a;
+  --color-text-muted: #64748b;
+  --color-text-subtle: #94a3b8;
+
+  /* Status */
+  --color-success: #16a34a;
+  --color-success-bg: #f0fdf4;
+  --color-danger: #dc2626;
+  --color-danger-bg: #fef2f2;
+  --color-warning: #d97706;
+  --color-warning-bg: #fffbeb;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--color-border-strong); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-text-subtle); }
+
+/* Focus */
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+/* Transitions */
+.transition-colors { transition: background-color 150ms, color 150ms, border-color 150ms; }
+
+@layer utilities {
+  .font-mono { font-family: var(--font-mono); }
+}
